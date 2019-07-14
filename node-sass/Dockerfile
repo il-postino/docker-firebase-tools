@@ -8,8 +8,8 @@ RUN npm i -g firebase-tools
 RUN apk update && \
     apk upgrade && \
     apk add git g++ gcc libgcc libstdc++ linux-headers make python && \
-    apk update && \
-    npm install -g npm5
+    apk update
+
 
 # install libsass
 RUN git clone https://github.com/sass/sassc && cd sassc && \
